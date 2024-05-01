@@ -22,7 +22,7 @@
     margin-bottom: 20px;
 }
 .heroContent>h1{
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bold;
 }
 .heroContent>h1>span{
@@ -30,8 +30,8 @@
 }
 
 .heroContent>p{
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .heroButtons{
@@ -41,7 +41,7 @@
 }
 
 .heroButtons>*{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     padding: 15px 40px;
     border: none;

@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    padding: 20px 150px;
+    padding: 15px 150px;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(4, 4, 46);
@@ -18,7 +18,7 @@
 }
 
 .logo>img{
-    height: 65px;
+    height: 60px;
     padding-bottom: 10px;
 }
 
@@ -26,14 +26,14 @@
 .navItems{
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
 }
 
 .navItems>*{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 19px;
 }
 .home{
     color: #006BFF;
@@ -51,7 +51,7 @@
     font-weight: bold;
     padding: 15px;
     border: none;
-    font-size: 17px;
+    font-size: 15px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }

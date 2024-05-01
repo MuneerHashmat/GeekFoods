@@ -1,13 +1,13 @@
 .gridContainer{
-    margin: 150px 12vw 70px 12vw ;
+    margin: 150px 7vw 70px 7vw ;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 4rem;
+    column-gap: 3rem;
     row-gap: 3rem;
 }
 
 .gridItem{
-    width: 430px;
+    width: 400px;
 }
 
 .gridText{
@@ -15,7 +15,7 @@
     color: rgb(59, 59, 59);
     padding: 20px;
     border-radius: 5px;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: lighter;
     margin-bottom: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
@@ -32,8 +32,8 @@
 }
 
 .gridImage>img{
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
 }

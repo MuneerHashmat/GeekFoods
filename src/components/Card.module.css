@@ -4,32 +4,32 @@
 }
 
 .rightCard{
-    width: 1000px;
-    height: 900px;
+    width: 800px;
+    height: 700px;
     margin-left: 44vw;
     background-color: rgb(240, 240, 240);
 }
 
 .rightCardContent{
     width: 67%;
-    padding-top: 30%;
+    padding-top: 20%;
     margin-left: 23%;
 }
 .rightCardContent>h1{
-    font-size: 37px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 .rightCardContent>p{
     font-size: 20px;
     color: rgb(90, 90, 90);
     margin-bottom: 30px;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 .rightCardContent>button{
     font-size: larger;
     background-color: #006BFF;
-    padding: 20px 50px;
+    padding: 15px 30px;
     /* border-color: #006BFF; */
     border: none;
     border-radius: 10px;
@@ -44,8 +44,8 @@
     border: 1px solid #006BFF;
 }
 .cardContainer>img{
-    width: 900px;
-    height: 700px;
+    width: 700px;
+    height: 500px;
     object-fit: cover;
     position: absolute;
     top: 100px;

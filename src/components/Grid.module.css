@@ -1,0 +1,49 @@
+.gridContainer{
+    margin: 150px 12vw 70px 12vw ;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 3rem;
+}
+
+.gridItem{
+    width: 430px;
+}
+
+.gridText{
+    background-color: rgb(240, 240, 240);
+    color: rgb(59, 59, 59);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+}
+.gridText>p{
+    line-height: 27px;
+}
+
+
+.gridImage{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.gridImage>img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.gridImage>p{
+    font-weight: bold;
+}
+
+.gridImage>p>span{
+    font-weight: normal;
+    font-size: larger;
+}
+

@@ -1,0 +1,53 @@
+.cardContainer{
+    margin-top: 70px;
+    position: relative;
+}
+
+.rightCard{
+    width: 1000px;
+    height: 900px;
+    margin-left: 44vw;
+    background-color: rgb(240, 240, 240);
+}
+
+.rightCardContent{
+    width: 67%;
+    padding-top: 30%;
+    margin-left: 23%;
+}
+.rightCardContent>h1{
+    font-size: 37px;
+    margin-bottom: 30px;
+}
+.rightCardContent>p{
+    font-size: 20px;
+    color: rgb(90, 90, 90);
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.rightCardContent>button{
+    font-size: larger;
+    background-color: #006BFF;
+    padding: 20px 50px;
+    /* border-color: #006BFF; */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.rightCardContent>button:hover{
+    background-color: rgb(240, 240, 240);
+    color: #006BFF;
+    cursor: pointer;
+    border: 1px solid #006BFF;
+}
+.cardContainer>img{
+    width: 900px;
+    height: 700px;
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+    left: 3vw;
+}

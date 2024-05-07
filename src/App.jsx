@@ -1,22 +1,18 @@
-import Navbar from './components/Navbar'
-import Hero from "./components/Hero"
-import Card from './components/Card'
-import Grid from './components/Grid'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import QuotesPage from './components/Quotes/QuotesPage';
 
+
+import Home from './components/Home/Home'
 import './App.css'
 
 function App() {
-
-
   return (
-    <>
-     <Navbar />
-     <Hero />
-     <Card />
-     <Grid />
-     <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} /> 
+        <Route path="/quotes" element={<QuotesPage />} />
+      </Routes>
+    </Router>
   )
 }
 

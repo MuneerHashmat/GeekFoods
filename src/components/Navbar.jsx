@@ -10,8 +10,8 @@ const Navbar=()=>{
             </div>
 
             <div className={styles.navItems}>
-                <a href="#" className={styles.home}>Home</a>
-                <a href="#">Quote</a>
+                <a href="/" className={styles.home}>Home</a>
+                <a href="/quotes">Quote</a>
                 <a href="#">Restaurants</a>
                 <a href="#">Foods</a>
                 <a href="#">Contact</a>

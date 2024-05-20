@@ -8,6 +8,7 @@ const Food = () => {
   const [currentDishes, setCurrentDishes] = useState([]);
   const [countries, setCountries] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [inputCountry, setInputCountry] = useState("");
 
   const fetchInitialDishes = async () => {
     try {
@@ -43,14 +44,40 @@ const Food = () => {
     if (searchStr.length > 0) {
       url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchStr}`;
     }
-    const response = await axios(url);
-    console.log(response.data.meals);
-    setCurrentDishes(response.data.meals);
+    try {
+      const response = await axios(url);
+      console.log(response.data.meals);
+      setCurrentDishes(response.data.meals);
+    } catch (e) {
+      console.log("An error occured: " + e);
+    }
   };
 
   useEffect(() => {
     searchDish();
   }, [searchQuery]);
+
+  const searchByCountry = async () => {
+    let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+    console.log(inputCountry);
+    if (inputCountry.length > 0) {
+      url = `https://www.themealdb.com/api/json/v1/1/filter.php?a=${inputCountry}`;
+    }
+    try {
+      const response = await axios(url);
+      console.log(response);
+      setCurrentDishes(response.data.meals ? response.data.meals : []);
+    } catch (e) {
+      console.log("An error occured: " + e);
+    }
+  };
+
+  useEffect(() => {
+    setCurrentDishes([]);
+    setTimeout(() => {
+      searchByCountry();
+    }, 2000);
+  }, [inputCountry]);
 
   return (
     <>
@@ -67,9 +94,13 @@ const Food = () => {
               placeholder="search for a dish"
               onChange={(e) => setSearchQuery(e.target.value)}
               value={searchQuery}
-              className="p-1 text-xl outline-none border-2 border-gray-400 rounded-md"
+              className="p-2 text-xl outline-none border-2 border-gray-400 rounded-md"
             />
-            <select className="p-1 text-xl outline-none border-2 border-gray-400 rounded-md">
+            <select
+              value={inputCountry}
+              onChange={(e) => setInputCountry(e.target.value)}
+              className="p-2 text-xl outline-none border-2 border-gray-400 rounded-md "
+            >
               <option value="">All Countries</option>
               {countries.map((country, index) => (
                 <option key={index} value={country.strArea}>

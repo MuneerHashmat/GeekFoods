@@ -64,3 +64,8 @@
     background-color: #0048ad;
 }
 
+@media only screen and (max-width: 1024px){
+    .navItems{
+        display: none;
+    }
+}

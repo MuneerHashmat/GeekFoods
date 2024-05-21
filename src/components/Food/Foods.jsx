@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { FadeLoader } from "react-spinners";
 import AdsClickIcon from "@mui/icons-material/AdsClick";
+import { Link } from "react-router-dom";
 
 const Food = () => {
   const [currentDishes, setCurrentDishes] = useState([]);
@@ -185,9 +186,11 @@ const Food = () => {
                     </p>
                   </div>
 
-                  <button className="font-bold p-2 rounded-md bg-blue-500 text-white hover:scale-110 transition-all w-[120px]">
-                    <AdsClickIcon /> Recipe
-                  </button>
+                  <Link to={`/recipe/${dish.idMeal}`}>
+                    <button className="font-bold p-2 rounded-md bg-blue-500 text-white hover:scale-110 transition-all w-[120px]">
+                      <AdsClickIcon /> Recipe
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))

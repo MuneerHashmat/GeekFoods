@@ -32,11 +32,11 @@ const Recipe = () => {
             <FadeLoader size={500} color="#006BFF" margin={20} />
           </div>
         ) : (
-          <div className=" max-w-[800px] mx-auto overflow-hidden rounded-lg shadow-customShadow">
+          <div className=" max-w-[900px] mx-auto overflow-hidden rounded-lg shadow-customShadow">
             <img
               src={recipeDetails.strMealThumb}
               alt={recipeDetails.strMeal}
-              className="w-full object-cover h-[380px]"
+              className="w-full object-cover h-[400px]"
             />
 
             <div className="mt-2 px-3 py-4">
